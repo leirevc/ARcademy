@@ -16,8 +16,9 @@ public class ImageTrackerManager : MonoBehaviour
     private void OnEnable()
     {
         aRTrackedImageManager.trackedImagesChanged += OnImageChanged;
-    }
 
+    }
+    
     private void OnDisable()
     {
         aRTrackedImageManager.trackedImagesChanged -= OnImageChanged;
@@ -57,11 +58,6 @@ public class ImageTrackerManager : MonoBehaviour
 
     }
 
-    //volvemos al menu
-    public void Return()
-    {
-        //a que escena se accede segun su index
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
-    }
+
 
 }
